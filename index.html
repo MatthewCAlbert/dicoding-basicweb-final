@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeyvatDaily | Berita baru setiap hari seputaran Teyvat</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon"/>
+
+  <!-- Font Awesome 5 + Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.gstatic.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+  <header>
+    <div class="socialbar">
+      <div class="socialbar-inner">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div>
+      <h1 class="header-title"><img src="./assets/img/favicon.png" alt="td-logo"> TeyvatDaily</h1>
+      <span class="header-description"><small>Berita baru setiap hari seputaran Teyvat</small></span>
+    </div>
+  </header>
+  
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <div class="mobile-menu">
+        <div class="brand">
+          <h1 class="brand-title"><img src="./assets/img/favicon.png" alt="td-logo"> TeyvatDaily</h1>
+        </div>
+        <div>
+          <a href="javascript:void(0)" class="mobile-menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></a>
+        </div>
+      </div>
+      <div class="wrapped-menu">
+        <ul>
+          <li><a href="/">BERANDA</a></li>
+          <li>
+            <div class="dropdown-wrapper" id="dropdown-1">
+              <a href="javascript:void(0)" class="dropdown-toggle" data-target="dropdown-1">DAERAH <i class="fas fa-chevron-down"></i></a>
+              <div class="dropdown-menu">
+                <a href="#">MONDSTADT</a>
+                <a href="#">LIYUE</a>
+                <a href="#">INAZUMA</a>
+                <a href="#">SUMERU</a>
+                <a href="#">FONTAINE</a>
+                <a href="#">NATLAN</a>
+                <a href="#">SNEZHNAYA</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown-wrapper" id="dropdown-2">
+              <a href="javascript:void(0)" class="dropdown-toggle" data-target="dropdown-2">KATEGORI <i class="fas fa-chevron-down"></i></a>
+              <div class="dropdown-menu">
+                <a href="#">TRENDING</a>
+                <a href="#">HOT</a>
+                <a href="#">EKONOMI</a>
+                <a href="#">ARCHON</a>
+                <a href="#">POLITIK</a>
+                <a href="#">SELEBRITI</a>
+                <a href="#">MAKANAN</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">TENTANG</a></li>
+        </ul>
+        <div class="d-flex-align-vertical search-bar-wrapper">
+          <div class="search-bar-container">
+            <input type="text" name="search" placeholder="Cari.." />
+            <span class="cursor-pointer"><i class="fas fa-search"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="moving-news-container">
+    <marquee class="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="8">
+      <a href="#">Breaking News: PSBB Inazuma diperpanjang 2 bulan, para netizen pun geram kepada Baal (6/13)!</a> <span class="dot"></span> 
+      <a href="#">Barbara untuk pertama kalinya tampil bersama Sang Kakak (6/12)</a> <span class="dot"></span> 
+      <a href="#">Morax mendapatkan patung pertamanya di Pelabuhan Liyue (3/07)</a>
+    </marquee>
+  </div>
+
+  <main>
+    <div class="main-inner">
+      <div id="content">
+        <section class="featured-slider slider" id="slider-1">
+          <div class="slider-container">
+            <article class="slider-item">
+              <div class="slider-content" style="background-image: url('./assets/img/news/inazuma.jpg');">
+                <div class="slider-lowerthird">
+                  <h1 class="news-title">PSBB Inazuma diperpanjang 2 bulan</h1>
+                  <span class="news-info">HOT | 13 Juni 2021, 05.34 AM</span>
+                  <p class="news-content">
+                    Setelah 2 tahun warga Inazuma berada dalam status PSBB, akhirnya wilayah ini seharusnya selesai status PSBBnya. Namun, sang archon Baal memutuskan untuk memperpanjang PSBB selama 2 bulan. Menurutnya, kestabilan politik dan persebaran virus masih dinilai terlalu cepat dan panas. Lantas apa yang menyebabkan hal ini masih berlanjut?
+                  </p>
+                  <a href="#" class="news-link">baca selengkapnya</a>
+                </div>
+              </div>
+            </article>
+            <article class="slider-item">
+              <div class="slider-content" style="background-image: url('./assets/img/news/barbara.jpg');">
+                <div class="slider-lowerthird">
+                  <h1 class="news-title">Barbara untuk pertama kalinya tampil bersama Sang Kakak</h1>
+                  <span class="news-info">SELEBRITI | 12 Juni 2021, 03.56 PM</span>
+                  <p class="news-content">
+                    Siapa yang tidak asing dengan idol Barbara. Seorang biarawati yang juga menjadi seorang idol kawaii asal Mondstadt. Baru-baru ini barbara menggelar sebuah konser spesial karena kali ini kakaknya yang merupakan Acting Grand Master dari Knight of Favonious berhasil dirayunya untuk ikut manggung. Penasaran bagaimana acaranya? Yuk simak artikel berikut!
+                  </p>
+                  <a href="#" class="news-link">baca selengkapnya</a>
+                </div>
+              </div>
+            </article>
+            <article class="slider-item">
+              <div class="slider-content" style="background-image: url('./assets/img/news/keqing-1.jpg');">
+                <div class="slider-lowerthird">
+                  <h1 class="news-title">Peningkatan Kinerja Tambang oleh Liyue Qixing</h1>
+                  <span class="news-info">EKONOMI | 12 Juni 2021, 12.34 AM</span>
+                  <p class="news-content">
+                    Bedasarkan laporan kinerja tambang cor lapis, disebutkan bahwa ada peningkatan sekitar 34% hasil per
+                    harinya
+                    dibandingkan bulan sebelumnya. Menurut warga setempat, sang Qixing memiliki strategi khusus untuk
+                    meningkatkan kinerja
+                    para pekerjanya. Dilansir melalui wawancaranya, Keqing menyebutkan bahwa ia langsung terjun ke tambang
+                    selama seminggu untuk memantau langsung para pekerja.
+                  </p>
+                  <a href="#" class="news-link">baca selengkapnya</a>
+                </div>
+              </div>
+            </article>
+            <span class="slider-nav-arrow slider-nav-left">
+              <span><</span>
+            </span>
+            <span class="slider-nav-arrow slider-nav-right">
+              <span>></span>
+            </span>
+          </div>
+          <div class="slider-dots">
+          </div>
+        </section>
+        <section class="news-section" style="margin-top: 20px;">
+          <article class="news-item">
+            <div class="news-image-container">
+              <img src="./assets/img/news/morax.png" alt="ini gambar" />
+            </div>
+            <div class="news-text">
+              <div>
+                <h1 class="news-title"><a href="#">Morax mendapatkan patung pertamanya di Pelabuhan Liyue</a></h1>
+                <span class="news-info">ARCHON | 7 Maret 2021, 09.10 AM</span>
+                <p class="news-content">
+                  Di Liyue memang ada kebiasaan merayakan dewanya turun tiap tahunnya. Namun warga setempat akhirnya memutuskan untuk membuatkan Morax sebuah patung untuk dapat selalu dilihat oleh warga sekitar dan diharapkan menjadi daya tarik pariwisata lokal.
+                </p>
+              </div>
+              <div>
+                <a href="#" class="news-link">baca selengkapnya</a>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="news-section">
+          <div>
+            <h1 class="title-underlined">Berita Terkini</h1>
+          </div>
+          <div class="news-grid-small">
+            <article class="news-item">
+              <div class="news-image-container">
+                <img src="./assets/img/news/baal.jpg" alt="ini gambar" />
+              </div>
+              <div class="news-text">
+                <div>
+                  <h1 class="news-title"><a href="#">10 Alasan mengapa Electro Archon tidak memberikan vision lagi</a></h1>
+                  <span class="news-info">ARCHON | 21 Maret 2021, 09.10 PM</span>
+                  <p class="news-content">
+                    Sang archon memang tidak pernah memberikan vision electro kepada warga teyvat selama beberapa tahun belakangan ini. Salah satu orang yang mendapat vision yaitu Fischl.
+                  </p>
+                </div>
+                <div>
+                  <a href="#" class="news-link">baca selengkapnya</a>
+                </div>
+              </div>
+            </article>
+            <article class="news-item">
+              <div class="news-image-container">
+                <img src="./assets/img/news/klee-fishing.jpg" alt="ini gambar" />
+              </div>
+              <div class="news-text">
+                <div>
+                  <h1 class="news-title"><a href="#">Klee mengajarkan cara mendapatkan banyak ikan dengan mudah</a></h1>
+                  <span class="news-info">TIPS | 14 Mei 2021, 03.47 PM</span>
+                  <p class="news-content">
+                    Pernah berpikir bagaimana seorang cilik bernama Klee ini mendapatkan banyak ikan dalam sehari-harinya. Yuk mari kita intip tips dari klee!
+                  </p>
+                </div>
+                <div>
+                  <a href="#" class="news-link">baca selengkapnya</a>
+                </div>
+              </div>
+            </article>
+            <article class="news-item">
+              <div class="news-image-container">
+                <img src="./assets/img/news/liyue-fest-foodstall.jpg" alt="ini gambar" />
+              </div>
+              <div class="news-text">
+                <div>
+                  <h1 class="news-title"><a href="#">Jajanan Lokal Liyue berkumpul pada Liyue Festival tahun ini</a></h1>
+                  <span class="news-info">MAKANAN | 17 Februari 2021, 05.28 PM</span>
+                  <p class="news-content">
+                    Bagi kalian para pecinta kuliner lokal dari daerah Liyue. Kalian tentu saja tidak mau melewatkan hal menarik seperti ini. Tahun ini puluhan penjual makanan dan jajanan Liyue berkumpul pada festival ini.
+                  </p>
+                </div>
+                <div>
+                  <a href="#" class="news-link">baca selengkapnya</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <aside>
+        <div class="block-span-container author-info">
+          <div>
+            <h1 class="title-underlined title-underlined-yellow">PROFIL PENULIS</h1>
+          </div>
+          <img src="./assets/img/me2.jpg" alt="profile-picture" class="pp-image" />
+          <span style="margin-top: 10px;">Matthew Christopher Albert</span>
+          <span><small>Jurnalis Teyvat | Mahasiswa Jurusan CS di Sumeru Academy</small></span>
+        </div>
+        <div class="block-span-container no-padding">
+          <div>
+            <h1 class="title-underlined title-underlined-yellow">TERPOPULER</h1>
+          </div>
+          <div class="news-container">
+            <div class="news-item">
+              <div>1</div>
+              <div class="news-title">
+                PSBB Inazuma diperpanjang 2 bulan
+              </div>
+            </div>
+            <div class="news-item">
+              <div>2</div>
+              <div class="news-title">
+                Morax mendapatkan patung pertamanya di Pelabuhan Liyue
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-span-container" style="margin-top: 20px;">
+          <span><small>advertisement</small></span>
+          <div class="advertisement-block">SPACE IKLAN</div>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-upper">
+        <div class="brand">
+          <h1 class="brand-title"><img src="./assets/img/favicon.png" alt="td-logo"> TeyvatDaily</h1>
+          <span class="brand-desc"><small>Berita baru setiap hari seputaran Teyvat</small></span>
+        </div>
+        <div class="link-wrapper">
+          <div class="links-category">
+            <p class="links-category-title">PRANALA LUAR</p>
+            <ul>
+              <li><a href="https://genshin.mihoyo.com" target="_blank" rel="noref noopener">Website Resmi</a></li>
+              <li><a href="https://www.facebook.com/GenshinImpact.id/" target="_blank" rel="noref noopener">Facebook Resmi</a></li>
+            </ul>
+          </div>
+          <div class="links-category">
+            <p class="links-category-title">NAVIGASI</p>
+            <ul>
+              <li><a href="#">Beranda</a></li>
+              <li><a href="#">Kategori</a></li>
+              <li><a href="#">Karir</a></li>
+              <li><a href="#">Kebijakan Privasi</a></li>
+              <li><a href="#">Tentang DailyTeyvat</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="attribution-container">
+        <div class="social-container">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+        <span class="attributon">Copyright 2021 PT. Teyvat Sumeru Tbk. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+</html>
